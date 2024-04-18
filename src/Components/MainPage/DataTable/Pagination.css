@@ -1,0 +1,36 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+  
+  .pagination-button:hover {
+    border-radius: 4px;
+    background-color: #EDF3F7;
+  }
+  
+  .page-number {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+  
+  .page-number.selected {
+    background-color: #00A696; /* Selected page background color */
+    color: #fff;
+    border-radius: 4px;
+  }
+  

@@ -1,0 +1,21 @@
+.app-container {
+  display: flex;
+}
+
+.main-page {
+  flex-grow: 1; 
+  padding-right: 15px; 
+}
+
+.custom-hr {
+  color: #EFF7F7;
+}
+
+.kpis{
+  display: flex;
+  margin-left: 92px;
+  width: 1235px;
+  border-radius: 5px;
+}
+
+

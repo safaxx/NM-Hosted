@@ -1,0 +1,62 @@
+.kpi-box {
+    margin-top: 20px;
+    margin-left: 6px;
+    width: 290px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    background-color: white;
+    border: none;
+  }
+  
+  .kpi-box .contract-types {
+    display: none;
+  }
+  
+  .kpi-box:hover .contract-types {
+    display: flex;
+    flex-direction: column; 
+    align-items:start; 
+  }
+  
+  .kpi-label {
+    color: #7E8B9F;
+  }
+  
+  .kpi-icon {
+    background-color: #E4E9EF;
+    color: #29B8AA;
+    height: 40%;
+    width: 10%;
+    padding: 15px;
+    border-radius: 5%;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+  
+  .kpi-box:hover .total-contracts,
+  .kpi-box:hover .kpi-icon {
+    display: none;
+  }
+  
+  
+  .kpi-box:hover .contract-types .kpi-value {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  
+  .kpi-box:hover .kpi-value div {
+    border-right: 2px solid #29B8AA;
+    padding-right: 5px;
+    margin-right: 5px;
+  }
+  
+  .kpi-box:hover .kpi-value div:last-child {
+    border-right: none;
+   
+  }
+  

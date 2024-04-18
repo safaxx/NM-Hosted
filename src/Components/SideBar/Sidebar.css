@@ -1,0 +1,143 @@
+.sidebar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 65px;
+  height: 100vh;
+  overflow-y: auto;
+  background: #034348;
+  box-shadow: 8px 0px 10px #080e151f;
+  opacity: 1;
+  transition: width 0.3s;
+}
+
+.sidebar:hover {
+  width: 210px;
+}
+
+.sidebar-top h2,
+.sidebar-bottom p {
+  visibility: hidden;
+}
+
+.sidebar:hover .sidebar-top h2,
+.sidebar:hover .sidebar-bottom p,
+.sidebar:hover .sidebar-top ul li {
+  visibility: visible;
+}
+.sidebar-top ul li span {
+  visibility: hidden;
+}
+
+/* Reveal text on hover */
+.sidebar:hover .sidebar-top ul li span {
+  visibility: visible;
+}
+.sidebar-top {
+  padding-top: 20px;
+  margin-left: 20px;
+}
+/* Add styles for active link */
+.sidebar-top ul li.active {
+    background-color: rgba(173, 250, 240, 0.5) ;
+    position: relative; 
+    padding: 7px;
+    width: 100%;
+  }
+  
+  .sidebar-top ul li.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px; 
+    width: 4px;
+    height: 100%;
+    background-color:  #3FD1BE; 
+  }
+
+.sidebar-logo p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+.sidebar-logo {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.sidebar-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  margin-right: 15px;
+}
+
+.sidebar-top ul {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.sidebar-top ul li {
+  text-align: left;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.sidebar-top ul li a {
+  color: #ffffff;
+  margin-left: 10px;
+  text-decoration: none;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.sidebar-top ul li svg {
+  margin-right: 10px;
+  color: #fff;
+}
+.sidebar-top ul li a:hover {
+  text-decoration: solid;
+}
+
+.sidebar-bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.profile {
+  display: flex;
+
+}
+.profile-name{
+    flex-direction: column;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(119, 190, 231);
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.profile p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fff;
+  font-size: 15px;
+  white-space: nowrap;
+  margin: 1px 0;
+
+}

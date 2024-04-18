@@ -1,0 +1,16 @@
+.rows-per-page-dropdown select {
+  width: 140px;
+  border: none; /* Remove border */
+  padding: 10px ; /* Add padding */
+  background-position: right center;
+  background-repeat: no-repeat;
+  font-size:medium;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.rows-per-page-dropdown select:hover{
+  background-color: #EDF3F7;
+  border-radius: 5px; /* Set background color */
+
+
+}

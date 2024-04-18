@@ -1,0 +1,32 @@
+.kpi-box {
+    margin-top: 20px;
+    margin-left: 6px;
+    width: 290px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    background-color: white;
+    border: none;
+  }
+
+  .kpi-label {
+    color: #7E8B9F;
+  }
+  
+  .kpi2-icon {
+    background-color: #E4E9EF;
+    color: #29B8AA;
+    height: 40%;
+    width: 10%;
+    padding: 15px;
+    border-radius: 5%;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+  
+
+  
+
+  
