@@ -2,19 +2,15 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Table.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFilter,
-  faBars,
-  faWindowMaximize,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
 import Pagination from "./Pagination";
 import RowsPerPage from "./RowsPerPage";
 
 const ContractTable = () => {
   const [contracts, setContracts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [rowsPerPage, setRowsPerPage] = useState(10); 
-  
+  const [rowsPerPage, setRowsPerPage] = useState(10);
+
   useEffect(() => {
     axios
       .get("http://localhost:8080/contracts/get")
@@ -34,7 +30,7 @@ const ContractTable = () => {
 
   const handleSelectRowsPerPage = (option) => {
     setRowsPerPage(option);
-    setCurrentPage(1); 
+    setCurrentPage(1);
   };
 
   const indexOfLastItem = currentPage * rowsPerPage;
@@ -99,21 +95,20 @@ const ContractTable = () => {
               <td>{contract.cgroup}</td>
             </tr>
           ))}
-          
         </tbody>
       </table>
       <div className="t-bottom">
-            <RowsPerPage
-              options={[10, 20]}
-              selectedOption={rowsPerPage}
-              onSelectOption={handleSelectRowsPerPage}
-            />
-            <Pagination
-              currentPage={currentPage}
-              totalPages={totalPages}
-              onChangePage={handleChangePage}
-            />
-          </div>
+        <RowsPerPage
+          options={[10, 20]}
+          selectedOption={rowsPerPage}
+          onSelectOption={handleSelectRowsPerPage}
+        />
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onChangePage={handleChangePage}
+        />
+      </div>
     </div>
   );
 };

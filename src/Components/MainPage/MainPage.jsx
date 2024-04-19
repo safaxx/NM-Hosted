@@ -4,6 +4,7 @@ import KpiBox2 from "./KPIs/KpiBox2";
 import KpiBox3 from "./KPIs/KpiBox3";
 import ContractTable from "./DataTable/Table";
 import ExtraComponent from "./DataInBetween/ExtraComponent";
+import './MainPage.css'
 
 const MainPage = ()=>{
     return(
